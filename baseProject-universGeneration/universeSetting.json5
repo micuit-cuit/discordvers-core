@@ -1,0 +1,240 @@
+{
+    "gaz": {
+        "O2": {
+            "key": "gaz.O2",
+            "color": "#FF0000",
+            "opacity": 0.5,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.9,
+                    "resource.coal": 0.2,
+                    "resource.petrol": 0.3,
+                    "resource.water": 0.8,
+                    "resource.metal": 0.1,
+                    "resource.ice": 0.6,
+                    "resource.nutrients": 0.9,
+                    "resource.hydrogen": 0.2
+                }
+            ]
+        },
+        "CO2": {
+            "key": "gaz.CO2",
+            "color": "#00FF00",
+            "opacity": 0.6,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.8,
+                    "resource.coal": 0.7,
+                    "resource.petrol": 0.6,
+                    "resource.water": 0.3,
+                    "resource.metal": 0.2,
+                    "resource.ice": 0.2,
+                    "resource.nutrients": 0.8,
+                    "resource.hydrogen": 0.1
+                }
+            ]
+        },
+        "H2": {
+            "key": "gaz.H2",
+            "color": "#0000FF",
+            "opacity": 0.4,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.2,
+                    "resource.coal": 0.1,
+                    "resource.petrol": 0.4,
+                    "resource.water": 0.7,
+                    "resource.metal": 0.2,
+                    "resource.ice": 0.9,
+                    "resource.nutrients": 0.3,
+                    "resource.hydrogen": 1.0
+                }
+            ]
+        },
+        "CH4": {
+            "key": "gaz.CH4",
+            "color": "#FFA500",
+            "opacity": 0.7,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.8,
+                    "resource.coal": 0.6,
+                    "resource.petrol": 0.9,
+                    "resource.water": 0.3,
+                    "resource.metal": 0.1,
+                    "resource.ice": 0.5,
+                    "resource.nutrients": 0.7,
+                    "resource.hydrogen": 0.8
+                }
+            ]
+        },
+        "N2": {
+            "key": "gaz.N2",
+            "color": "#800080",
+            "opacity": 0.5,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.7,
+                    "resource.coal": 0.3,
+                    "resource.petrol": 0.2,
+                    "resource.water": 0.6,
+                    "resource.metal": 0.4,
+                    "resource.ice": 0.3,
+                    "resource.nutrients": 0.8,
+                    "resource.hydrogen": 0.2
+                }
+            ]
+        },
+        "SO2": {
+            "key": "gaz.SO2",
+            "color": "#FFFF00",
+            "opacity": 0.8,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.1,
+                    "resource.coal": 0.5,
+                    "resource.petrol": 0.2,
+                    "resource.water": 0.1,
+                    "resource.metal": 0.7,
+                    "resource.ice": 0.2,
+                    "resource.nutrients": 0.3,
+                    "resource.sulfur": 1.0
+                }
+            ]
+        },
+        "NH3": {
+            "key": "gaz.NH3",
+            "color": "#00FFFF",
+            "opacity": 0.7,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.2,
+                    "resource.coal": 0.1,
+                    "resource.petrol": 0.3,
+                    "resource.water": 0.5,
+                    "resource.metal": 0.2,
+                    "resource.ice": 0.6,
+                    "resource.nutrients": 0.9,
+                    "resource.ammonia": 1.0
+                }
+            ]
+        }
+    },
+    "gazIncompatibilities": {
+        "O2": ["CH4", "H2", "NH3", "SO2"],
+        "CH4": ["O2", "SO2"],
+        "H2": ["O2", "SO2", "NH3"],
+        "CO2": ["NH3"],
+        "SO2": ["H2", "CH4", "NH3"],
+        "NH3": ["O2", "CO2", "SO2", "H2"]
+    },
+    "gazInfluence": {
+        "O2": {
+            "gaz.CO2": 0.5,
+            "gaz.H2": 0.3,
+            "gaz.CH4": 0.2,
+            "gaz.N2": 0.1,
+            "gaz.SO2": 0.2,
+            "gaz.NH3": 0.3
+        },
+        "CO2": {
+            "gaz.O2": 0.5,
+            "gaz.H2": 0.2,
+            "gaz.CH4": 0.3,
+            "gaz.N2": 0.1,
+            "gaz.SO2": 0.2,
+            "gaz.NH3": 0.3
+        },
+        "H2": {
+            "gaz.O2": 0.3,
+            "gaz.CO2": 0.2,
+            "gaz.CH4": 0.3,
+            "gaz.N2": 0.1,
+            "gaz.SO2": 0.2,
+            "gaz.NH3": 0.3
+        },
+        "CH4": {
+            "gaz.O2": 0.2,
+            "gaz.CO2": 0.3,
+            "gaz.H2": 0.3,
+            "gaz.N2": 0.1,
+            "gaz.SO2": 0.2,
+            "gaz.NH3": 0.3
+        },
+        "N2": {
+            "gaz.O2": 0.1,
+            "gaz.CO2": 0.1,
+            "gaz.H2": 0.1,
+            "gaz.CH4": 0.1,
+            "gaz.SO2": 0.1,
+            "gaz.NH3": 0.1
+        },
+        "SO2": {
+            "gaz.O2": 0.2,
+            "gaz.CO2": 0.2,
+            "gaz.H2": 0.2,
+            "gaz.CH4": 0.2,
+            "gaz.N2": 0.1,
+            "gaz.NH3": 0.3
+        },
+        "NH3": {
+            "gaz.O2": 0.3,
+            "gaz.CO2": 0.3,
+            "gaz.H2": 0.3,
+            "gaz.CH4": 0.3,
+            "gaz.N2": 0.1,
+            "gaz.SO2": 0.3
+        }
+    },
+    "distence":{
+        solarSystem: {
+            size: {
+                min: 800, 
+                max: 1500, 
+            },
+            distance: {
+                min: 10000000, 
+                max: 100000000, 
+            }
+        },
+        star: {
+            size: {
+                min: 500, 
+                max: 1000, 
+            },
+            habitableZone: {
+                min: 0.30, 
+                max: 0.37, 
+            }
+       },
+        planet: {
+            distance: { 
+                min: 100, 
+                max: 300, 
+            },
+            size: {
+                min: 1000, 
+                max: 10000, 
+            },
+            ring: {
+                probability: 0.7,
+            }
+        },
+        moon: {
+            distance: { 
+                min: 1000, 
+                max: 10000, 
+            },
+            size: {
+                min: 100, 
+                max: 1000, 
+            }
+        },
+    },
+    size: {
+        universe:    10000,
+        solarSystem: 3000,
+        gateway:     1500,
+        border:      1500,
+    }
+}

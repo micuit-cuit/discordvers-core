@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Visualisateur Système Stellaire</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        canvas {
+            background: #111;
+            margin-top: 20px;
+            border: 2px solid #333;
+            cursor: pointer;
+        }
+        /* Tooltip style */
+        #tooltip {
+            position: absolute;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            pointer-events: none;
+            white-space: nowrap;
+            visibility: hidden;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌠 Visualisation des Systèmes</h1>
+    <input type="text" id="fileInput" style="margin: 20px; padding: 10px; width: 300px;" placeholder="Entrez l'URL du fichier JSON"  value="/generatedUniverse.json" />
+    <button id="loadButton" style="padding: 10px 20px;">Charger Système</button>
+    <canvas id="system" width="1200" height="600"></canvas>
+    <div id="tooltip"></div>
+
+    <script>
+        let systemData = null;
+        const canvas = document.getElementById("system");
+        const ctx = canvas.getContext("2d");
+        const tooltip = document.getElementById("tooltip");
+
+        // Garde en mémoire la dernière planète/lune sous la souris
+        let hoveredObject = null;
+
+
+        async function fetchSystemData(url) {
+
+            const response = await fetch(url);
+            systemData = await response.json();
+
+            // boutons pour naviguer
+            const systemsContainer = document.createElement('div');
+            systemsContainer.style.margin = '20px';
+            systemsContainer.style.display = 'flex';
+            systemsContainer.style.justifyContent = 'center';
+                systemsContainer.className = 'system-buttonClick';
+
+            systemData.systems.forEach((system, index) => {
+                const button = document.createElement('button');
+                button.textContent = system.star.name;
+                button.style.margin = '0 5px';
+                button.onclick = () => drawSystem(index);
+                systemsContainer.appendChild(button);
+            });
+
+            document.body.appendChild(systemsContainer);
+            drawSystem(0);
+        }
+
+        // Pour garder trace des zones cliquables (planètes et lunes)
+        let interactiveZones = [];
+
+        function drawSystem(systemIndex = 0) {
+            interactiveZones = [];
+            const w = canvas.width;
+            const h = canvas.height;
+            ctx.clearRect(0, 0, w, h);
+
+            const system = systemData.systems[systemIndex];
+            const planets = system.planets;
+            const centerY = h / 2;
+
+            const maxDistance = Math.max(...planets.map(p => p.distanceMeters));
+            const maxSize = Math.max(...planets.map(p => p.sizeMeters));
+
+            // Zone habitable
+            const hzStartRadius = (system.star.habitableZoneMeters.start / maxDistance) * (w - 100);
+            const hzEndRadius = (system.star.habitableZoneMeters.end / maxDistance) * (w - 100);
+            ctx.beginPath();
+            ctx.arc(50, centerY, hzEndRadius, 0, Math.PI * 2, false);
+            ctx.arc(50, centerY, hzStartRadius, 0, Math.PI * 2, true);
+            ctx.closePath();
+            ctx.fillStyle = "rgba(0, 255, 0, 0.15)";
+            ctx.fill();
+
+            // Étoile
+            ctx.beginPath();
+            ctx.arc(50, centerY, 20, 0, Math.PI * 2);
+            ctx.fillStyle = system.star.color;
+            ctx.fill();
+            ctx.fillStyle = "white";
+            ctx.font = "16px sans-serif";
+            ctx.fillText(system.star.name, 10, centerY + 40);
+
+            // Planètes + lunes
+            for (const planet of planets) {
+                const x = 50 + (planet.distanceMeters / maxDistance) * (w - 100);
+                const radius = Math.max(3, (planet.sizeMeters / maxSize) * 30);
+
+                // Dessine planète
+                ctx.beginPath();
+                ctx.arc(x, centerY, radius, 0, Math.PI * 2);
+                ctx.fillStyle = planet.color;
+                ctx.fill();
+
+                // Nom
+                const colorText = planet.type === 'gas_giant' ? '#ffbdf9' : planet.type === 'rocky' ? '#853232' : '#00ff00';
+                ctx.fillStyle = colorText;
+                ctx.textAlign = "center";
+                ctx.font = "12px sans-serif";
+                ctx.fillText(planet.name, x, centerY + radius + 15);
+
+                // Zone interactive planète
+                interactiveZones.push({
+                    type: 'planet',
+                    data: planet,
+                    x,
+                    y: centerY,
+                    radius
+                });
+
+                // Dessine lunes autour (en arc sous la planète)
+                if (planet.moons && planet.moons.length > 0) {
+                    const moons = planet.moons;
+                    const moonCount = moons.length;
+                    const angleStart = Math.PI / 4;
+                    const angleEnd = (3 * Math.PI) / 4;
+                    for (let i = 0; i < moonCount; i++) {
+                        const moon = moons[i];
+                        const angle = angleStart + (angleEnd - angleStart) * (i / (moonCount - 1 || 1));
+                        const moonDistance = 40; // distance fixe depuis la planète
+                        const mx = x + Math.cos(angle) * moonDistance;
+                        const my = centerY + Math.sin(angle) * moonDistance;
+                        const mradius = Math.max(2, (moon.sizeMeters / maxSize) * 20);
+
+                        ctx.beginPath();
+                        ctx.arc(mx, my, mradius, 0, Math.PI * 2);
+                        ctx.fillStyle = moon.color;
+                        ctx.fill();
+
+                        ctx.fillStyle = "#aaa";
+                        ctx.fillText(moon.name, mx, my + mradius + 12);
+
+                        // Zone interactive lune
+                        interactiveZones.push({
+                            type: 'moon',
+                            data: moon,
+                            x: mx,
+                            y: my,
+                            radius: mradius
+                        });
+                    }
+                }
+            }
+            // Ajout de la réglette 1 UA en bas à droite
+            const uaInMeters = 1.496e11; // 1 UA en mètres
+            const scale = (w - 100) / Math.max(...system.planets.map(p => p.distanceMeters));
+            const uaLengthPx = uaInMeters * scale;
+
+            const barWidth = uaLengthPx;
+            const barHeight = 6;
+            const barX = w - barWidth - 50;
+            const barY = h - 40;
+
+            // Barre
+            ctx.fillStyle = 'white';
+            ctx.fillRect(barX, barY, barWidth, barHeight);
+
+            // Texte "1 UA"
+            ctx.fillStyle = 'white';
+            ctx.font = '14px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('1 UA', barX + barWidth / 2, barY - 10);
+
+        }
+
+        // Cherche si la souris est dans une zone interactive
+        function findHoveredObject(mx, my) {
+            for (const obj of interactiveZones) {
+                const dx = mx - obj.x;
+                const dy = my - obj.y;
+                if (dx * dx + dy * dy <= obj.radius * obj.radius) {
+                    return obj;
+                }
+            }
+            return null;
+        }
+
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mx = e.clientX - rect.left;
+            const my = e.clientY - rect.top;
+
+            const hovered = findHoveredObject(mx, my);
+            if (hovered) {
+                if (hoveredObject !== hovered) {
+                    hoveredObject = hovered;
+                    // Affiche tooltip avec infos
+                    tooltip.style.visibility = 'visible';
+                    tooltip.style.left = (e.pageX + 10) + 'px';
+                    tooltip.style.top = (e.pageY + 10) + 'px';
+                    tooltip.innerHTML = generateInfoHTML(hovered);
+                } else {
+                    // Met à jour position tooltip seulement
+                    tooltip.style.left = (e.pageX + 10) + 'px';
+                    tooltip.style.top = (e.pageY + 10) + 'px';
+                }
+            } else {
+                hoveredObject = null;
+                tooltip.style.visibility = 'hidden';
+            }
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            hoveredObject = null;
+            tooltip.style.visibility = 'hidden';
+        });
+
+function generateInfoHTML(obj) {
+    const d = obj.data;
+    const lines = [];
+
+    if (obj.type === 'planet') {
+        lines.push(`<b>Planète ${d.name}</b>`);
+        lines.push(`Temp: ${Math.round(d.temperatureK)}°K (${Math.round(d.temperatureC)}°C)`);
+        lines.push(`Distance: ${formatDistance(Math.round(d.distanceMeters))}`);
+        // Taille en diamètre, on double la tailleMeters (qui est rayon)
+        lines.push(`Diamètre: ${formatDistance(Math.round(d.sizeMeters * 2))}`);
+        lines.push(`Gravity: ${formatGravity(d.gravity)}`);
+        lines.push(`Mass: ${formatMass(d.mass)}`);
+        lines.push(`Density: ${formatDensity(d.massDensity)}`);
+        lines.push(`Pressure: ${formatPressure(d.pressure)}`);
+
+        if (d.atmosphere) {
+            const gases = Object.entries(d.atmosphere)
+                .filter(([_, v]) => v > 0)
+                .map(([k, v]) => `${k.replace("gaz.", "")}: ${(v * 100).toFixed(0)}%`);
+            lines.push(`<br><b>Atmosphère</b>`);
+            gases.forEach(g => lines.push(g));
+        }
+
+        if (d.resources) {
+            const res = Object.entries(d.resources)
+                .filter(([_, v]) => v > 0)
+                .map(([k, v]) => `${k.replace("resource.", "")}: ${(v * 100).toFixed(0)}%`);
+            lines.push(`<br><b>Ressources</b>`);
+            res.forEach(r => lines.push(r));
+        }
+
+    } else if (obj.type === 'moon') {
+        lines.push(`<b>Lune ${d.name}</b>`);
+        lines.push(`Distance à planète: ${formatDistance(Math.round(d.distanceMeters))}`);
+        // Taille en diamètre aussi
+        lines.push(`Diamètre: ${formatDistance(Math.round(d.sizeMeters * 2))}`);
+
+        if (d.resources) {
+            const res = Object.entries(d.resources)
+                .filter(([_, v]) => v > 0)
+                .map(([k, v]) => `${k.replace("resource.", "")}: ${(v * 100).toFixed(0)}%`);
+            lines.push(`<br><b>Ressources</b>`);
+            res.forEach(r => lines.push(r));
+        }
+    }
+    return lines.join('<br>');
+}
+
+        // Fonctions de formatage déjà présentes
+        function formatDistance(meters) {
+            const absValue = Math.abs(meters);
+            const units = [
+                { suffix: 'Gm', value: 1e9 },
+                { suffix: 'Mm', value: 1e6 },
+                { suffix: 'km', value: 1e3 },
+                { suffix: 'm', value: 1 }
+            ];
+            for (const unit of units) {
+                if (absValue >= unit.value) {
+                    return (meters / unit.value).toFixed(2) + ' ' + unit.suffix;
+                }
+            }
+            return meters + ' m';
+        }
+        function formatGravity(g) {
+            return g.toFixed(2) + ' m/s²';
+        }
+        function formatMass(mass) {
+            if (mass >= 1e9) return (mass / 1e9).toFixed(2) + ' Gt';
+            if (mass >= 1e6) return (mass / 1e6).toFixed(2) + ' Mt';
+            if (mass >= 1e3) return (mass / 1e3).toFixed(2) + ' kt';
+            return mass.toFixed(2) + ' t';
+        }
+        function formatDensity(density) {
+            return density.toFixed(2) + ' kg/m³';
+        }
+        function formatPressure(pressure) {
+            if (pressure >= 1e6) return (pressure / 1e6).toFixed(2) + ' MPa';
+            if (pressure >= 1e3) return (pressure / 1e3).toFixed(2) + ' kPa';
+            return pressure.toFixed(2) + ' Pa';
+        }
+        // Événement pour charger le système depuis l'input
+        document.getElementById("loadButton").addEventListener("click", () => {
+            const url = document.getElementById("fileInput").value.trim();
+            if (url) {
+                // Réinitialise les zones interactives
+                interactiveZones = [];
+                hoveredObject = null;
+                tooltip.style.visibility = 'hidden';
+                // reset les boutons
+                const buttonClick = document.querySelectorAll('.system-buttonClick');
+                if (buttonClick) {
+                    buttonClick.forEach(button => button.remove());
+                }
+                fetchSystemData(url);
+            } else {
+                alert("Veuillez entrer une URL valide pour le fichier JSON.");
+            }
+        });
+    </script>
+</body>
+</html>

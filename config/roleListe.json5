@@ -1,0 +1,25 @@
+{
+    "1": {
+        "name": "owner",
+        "permissions": [
+            "DELETE_GUILD",
+            "INVITE_MEMBERS",            
+        ],
+    },
+    "2": {
+        "name": "admin",
+        "permissions": [
+            "INVITE_MEMBERS",
+        ],
+    },
+    "3": {
+        "name": "moderator",
+        "permissions": [
+        ],
+    },
+    "4": {
+        "name": "member",
+        "permissions": [
+        ],
+    }    
+}

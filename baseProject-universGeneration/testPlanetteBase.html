@@ -1,0 +1,103 @@
+<style>
+    body{
+  background-image: url("https://wallpapercave.com/wp/wp4865484.jpg")
+}
+</style>
+<canvas id="galaxy" width="800" height="600"></canvas>
+
+<script>const canvas = document.getElementById("galaxy");
+const ctx = canvas.getContext("2d");
+
+const textureImage = new Image();
+const noiseImage = new Image();
+textureImage.src = "texture.png"; // petite image avec motifs (marbre, gaz, etc.)
+noiseImage.src = "noise.png";     // bruit noir & blanc en semi-transparence
+
+// Exemple planète
+const planet = {
+    x: 400,
+    y: 300,
+    radius: 60,
+    color: "<<<COLOR>>>", // Couleur de la planète
+    drawRings: true
+};
+
+// 🎨 Utilitaires couleurs
+function hexToRgb(hex) {
+    const bigint = parseInt(hex.slice(1), 16);
+    return {
+        r: (bigint >> 16) & 255,
+        g: (bigint >> 8) & 255,
+        b: bigint & 255
+    };
+}
+
+function rgbToHex(r, g, b) {
+    return "#" + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+}
+
+function lighten(hex, percent) {
+    const { r, g, b } = hexToRgb(hex);
+    return rgbToHex(
+        Math.min(255, r + percent),
+        Math.min(255, g + percent),
+        Math.min(255, b + percent)
+    );
+}
+
+function darken(hex, percent) {
+    const { r, g, b } = hexToRgb(hex);
+    return rgbToHex(
+        Math.max(0, r - percent),
+        Math.max(0, g - percent),
+        Math.max(0, b - percent)
+    );
+}
+
+// 🌍 Dessine la planète complète avec tous les effets
+function drawPlanet(p) {
+    ctx.save();
+
+    // --- Anneau (optionnel) ---
+    if (p.drawRings) {
+        ctx.beginPath();
+        ctx.ellipse(p.x, p.y, p.radius * 1.5, p.radius * 0.4, 0, 0, Math.PI * 2);
+        ctx.strokeStyle = "#aaa";
+        ctx.globalAlpha = 0.2;
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+    }
+
+    // --- Glow atmosphérique ---
+    const glow = ctx.createRadialGradient(p.x, p.y, p.radius * 0.8, p.x, p.y, p.radius * 1.5);
+    glow.addColorStop(0, p.color+"7F");
+    glow.addColorStop(1, "rgba(255, 255, 255, 0)");
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.radius * 1.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // --- Dégradé surface ---
+    const grad = ctx.createRadialGradient(p.x, p.y, p.radius * 0.2, p.x, p.y, p.radius);
+    grad.addColorStop(0, lighten(p.color, 30));
+    grad.addColorStop(0.6, p.color);
+    grad.addColorStop(1, darken(p.color, 30));
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+    ctx.fill();
+  
+    ctx.restore();
+}
+
+// 🎬 Attendre que les images soient prêtes
+function ready() {
+    if (textureImage.complete && noiseImage.complete) {
+        drawPlanet(planet);
+    } else {
+        setTimeout(ready, 50);
+    }
+}
+ready();
+</script>

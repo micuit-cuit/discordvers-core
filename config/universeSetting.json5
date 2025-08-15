@@ -1,0 +1,375 @@
+{
+    "gaz": {
+        "gaz.O2": {
+            "key": "gaz.O2",
+            "color": "#aaccff33",
+            colorBouste: true,
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.9,
+                    "resource.coal": 0.2,
+                    "resource.petrol": 0.3,
+                    "resource.water": 0.8,
+                    "resource.aluminium": 0.7,
+                    "resource.titanium": 0.6,
+                    "resource.zinc": 0.5,
+                    "resource.uranium": 0.6
+                }
+            ]
+        },
+        "gaz.CO2": {
+            "key": "gaz.CO2",
+            "color": "#ffffff33",
+            "resourceInfluence": [
+                {
+                    "resource.organicMatter": 0.8,
+                    "resource.coal": 0.7,
+                    "resource.petrol": 0.6,
+                    "resource.water": 0.3,
+                    "resource.lithium": 0.2,
+                    "resource.plomb": 0.3
+                }
+            ]
+        },
+        "gaz.H2": {
+            "key": "gaz.H2",
+            "color": "#ffffff33",
+            "resourceInfluence": 
+                {
+                    "resource.organicMatter": 0.2,
+                    "resource.coal": 0.1,
+                    "resource.petrol": 0.4,
+                    "resource.water": 0.7,
+                    "resource.lithium": 0.3,
+                    "resource.uranium": 0.2
+                }
+            
+        },
+        "gaz.CH4": {
+            "key": "gaz.CH4",
+            "color": "#ffffff33",
+            "resourceInfluence": 
+                {
+                    "resource.organicMatter": 0.8,
+                    "resource.coal": 0.6,
+                    "resource.petrol": 0.9,
+                    "resource.water": 0.3,
+                    "resource.iron": 0.2
+                }
+            
+        },
+        "gaz.N2": {
+            "key": "gaz.N2",
+            "color": "#ffffff33",
+            "resourceInfluence": 
+                {
+                    "resource.organicMatter": 0.7,
+                    "resource.coal": 0.3,
+                    "resource.petrol": 0.2,
+                    "resource.water": 0.6,
+                    "resource.lithium": 0.1
+                }
+            
+        },
+        "gaz.SO2": {
+            "key": "gaz.SO2",
+            "color": "#f5e6b833",
+            colorBouste: true,
+            "resourceInfluence": 
+                {
+                    "resource.coal": 0.5,
+                    "resource.petrol": 0.2,
+                    "resource.water": 0.1,
+                    "resource.copper": 0.6,
+                    "resource.zinc": 0.4,
+                    "resource.plomb": 0.6
+                }
+            
+        },
+        "gaz.NH3": {
+            "key": "gaz.NH3",
+            "color": "#ccf0ff33",
+            colorBouste: true,
+            "resourceInfluence": 
+                {
+                    "resource.organicMatter": 0.2,
+                    "resource.coal": 0.1,
+                    "resource.petrol": 0.3,
+                    "resource.water": 0.5,
+                    "resource.nickel": 0.4,
+                    "resource.iron": 0.5
+                }
+            
+        }
+    },
+
+    "incompatiblePairs": [
+            ['gaz.O2', 'gaz.NH3'],
+            ['gaz.O2', 'gaz.CH4'],
+            ['gaz.H2', 'gaz.O2'],
+            ['gaz.SO2', 'gaz.NH3']
+        ],
+    "gazInfluence": {
+        "gaz.O2": {
+            "gaz.CO2": 0.3,
+            "gaz.N2": 0.2,
+            "gaz.O3": 0.2,
+            "gaz.H2O": 0.2,
+            "gaz.SO2": 0.1
+        },
+        "gaz.CO2": {
+            "gaz.O2": 0.2,
+            "gaz.N2": 0.2,
+            "gaz.CH4": 0.3,
+            "gaz.H2O": 0.2,
+            "gaz.SO2": 0.1
+        },
+        "gaz.N2": {
+            "gaz.O2": 0.2,
+            "gaz.CO2": 0.2,
+            "gaz.H2O": 0.2,
+            "gaz.Ar": 0.2,
+            "gaz.CH4": 0.1,
+            "gaz.He": 0.1
+        },
+        "gaz.H2": {
+            "gaz.He": 0.4,
+            "gaz.CH4": 0.2,
+            "gaz.NH3": 0.2,
+            "gaz.H2O": 0.1,
+            "gaz.HCN": 0.1
+        },
+        "gaz.CH4": {
+            "gaz.H2": 0.3,
+            "gaz.NH3": 0.2,
+            "gaz.H2O": 0.2,
+            "gaz.CO2": 0.2,
+            "gaz.C2H6": 0.1
+        },
+        "gaz.SO2": {
+            "gaz.CO2": 0.3,
+            "gaz.N2": 0.2,
+            "gaz.O2": 0.1,
+            "gaz.H2O": 0.2,
+            "gaz.H2S": 0.2
+        },
+        "gaz.NH3": {
+            "gaz.H2": 0.3,
+            "gaz.CH4": 0.2,
+            "gaz.H2O": 0.2,
+            "gaz.N2": 0.2,
+            "gaz.HCN": 0.1
+        },
+        "gaz.He": {
+            "gaz.H2": 0.3,
+            "gaz.CH4": 0.2,
+            "gaz.N2": 0.2,
+            "gaz.Ne": 0.2,
+            "gaz.Ar": 0.1
+        }
+    },
+    "resourceSettings": {
+    "resource.water": {
+        "validPlanetTypes": ["rocky"],
+        "temperatureRange": [250, 373],
+        "resourceInfluenceRange": {
+            "gaz.H2O": [0.5, 1],
+            "gaz.O2": [0.2, 0.4],
+            "gaz.CO2": [0.1, 0.3]
+        },
+        color: "#3399ff"
+    },
+    "resource.organicMatter": {
+        "validPlanetTypes": ["rocky"],
+        "temperatureRange": [250, 290],
+        "resourceInfluenceRange": {
+            "resource.water": [0.3, 1],
+            "gaz.O2": [0.5, 0.8],
+            "gaz.CO2": [0.1, 0.4],
+            "gaz.N2": [0.2, 0.5]
+        },
+        color: "#66cc66"
+    },
+    "resource.coal": {
+        "validPlanetTypes": ["rocky"],
+        "temperatureRange": [180, 500],
+        "resourceInfluenceRange": {
+            "resource.organicMatter": [0.4, 0.7],
+            "gaz.CO2": [0.3, 0.6]
+        },
+        color: "#333333"
+    },
+    "resource.petrol": {
+        "validPlanetTypes": ["rocky"],
+        "temperatureRange": [150, 400],
+        "resourceInfluenceRange": {
+            "resource.organicMatter": [0.6, 1],
+            "resource.coal": [0.2, 0.6],
+            "resource.water": [0.2, 0.5],
+            "gaz.CH4": [0.1, 0.3]
+        },
+        color: "#222244"
+    },
+    "resource.iron": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "gaz.N2": [0.1, 0.3]
+        },
+        color: "#888888"
+    },
+    "resource.gold": {
+        "temperatureRange": [300, 700],
+        "resourceInfluenceRange": {
+            "resource.iron": [0.2, 0.4],
+            "gaz.SO2": [0.2, 0.3]
+        },
+        color: "#ffd700"
+    },
+    "resource.copper": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.iron": [0.3, 0.5]
+        },
+        color: "#cc6600"
+    },
+    "resource.nickel": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.iron": [0.2, 0.4]
+        },
+        color: "#669999"
+    },
+    "resource.zinc": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.copper": [0.3, 0.6]
+        },
+        color: "#99ccff"
+    },
+    "resource.aluminium": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.iron": [0.2, 0.5]
+        },
+        color: "#cccccc"
+    },
+    "resource.titanium": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.nickel": [0.2, 0.4],
+            "gaz.O2": [0.2, 0.3]
+        },
+        color: "#6688aa"
+    },
+    "resource.plomb": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "resource.zinc": [0.2, 0.4]
+        },
+        color: "#444444"
+    },
+    "resource.lithium": {
+        "temperatureRange": [200, 600],
+        "resourceInfluenceRange": {
+            "gaz.H2": [0.2, 0.5],
+            "gaz.He": [0.2, 0.4]
+        },
+        color: "#ff99cc"
+    },
+    "resource.uranium": {
+        "temperatureRange": [300, 600],
+        "resourceInfluenceRange": {
+            "resource.iron": [0.3, 0.5],
+            "resource.titanium": [0.2, 0.3]
+        },
+        color: "#66ff00"
+    }
+}
+,
+    "baseGaz":{
+        "rocky": ["gaz.O2", "gaz.CO2", "gaz.N2"],
+        "gas_giant": ["gaz.H2", "gaz.He"],
+        "habitable": {
+            "gaz.O2": 0.21,
+            "gaz.N2": 0.78,
+            "gaz.Ar": 0.01
+        }
+    },
+    preferredGaz: {
+        rocky: ["gaz.O2", "gaz.CO2", "gaz.N2", "gaz.SO2"],
+        gas_giant: ["gaz.H2", "gaz.He", "gaz.CH4", "gaz.NH3"]
+    },
+    materialDensity: {
+        "resource.iron": 7874,
+        "resource.gold": 19300,
+        "resource.copper": 8960,
+        "resource.nickel": 8908,
+        "resource.zinc": 7135,
+        "resource.aluminium": 2700,
+        "resource.titanium": 4500,
+        "resource.plomb": 11340,
+        "resource.lithium": 534,
+        "resource.uranium": 19050,
+    },
+    gazDensity: {
+        "gaz.N2": 1.25,
+        "gaz.H2O": 0.8,
+        "gaz.CO2": 1.8,
+        "gaz.CH4": 0.7,
+        "gaz.O3": 2.0,
+        "gaz.O2": 1.29,
+        "gaz.Ar": 1.79,
+        "gaz.He": 0.18,
+        "gaz.H2": 0.14,
+        "gaz.NH3": 0.77,
+        "gaz.SO2": 2.9,
+        "gaz.Ne": 0.9, // Néon, densité approx entre Ar et He
+    },
+    moonFloor: {
+        "resource.water": {
+            min: 0.0,
+            max: 0.5,
+            color: "#00BFFF",
+        },
+        "resource.regolith": {
+            min: 0.0,
+            max: 1.0,
+            color: "#D3D3D3",
+        },
+        "resource.iron": {
+            min: 0.0,
+            max: 0.2,
+            color: "#B22222",
+        },
+        "resource.titanium": {
+            min: 0.0,
+            max: 0.1,
+            color: "#808080",
+        },
+        "resource.plomb": {
+            min: 0.0,
+            max: 0.05,
+            color: "#A9A9A9",
+        },
+        "resource.copper": {
+            min: 0.0,
+            max: 0.05,
+            color: "#FF8C00",
+        },
+        "resource.zinc": {
+            min: 0.0,
+            max: 0.05,
+            color: "#FFD700",
+        },
+        "resource.gold": {
+            min: 0.0,
+            max: 0.05,
+            color: "#FFD700",
+        },
+        "resource.nickel": {
+            min: 0.0,
+            max: 0.05,
+            color: "#B8860B",
+        }
+    }
+}

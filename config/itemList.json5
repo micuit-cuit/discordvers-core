@@ -1,0 +1,7 @@
+[
+    {
+        key: "item.apple",
+        price: 5,
+        type: "food"
+    }
+]

@@ -1,0 +1,2043 @@
+{
+  "systems": [
+    {
+      "star": {
+        "id": "1ud1vy1p65fwt3",
+        "name": "Iot-349",
+        "type": "O",
+        "mass": 16,
+        "luminosity": 30000,
+        "color": "#9bb0ff",
+        "radiusMeters": 2784000000,
+        "temperatureK": 1000778.9566132972,
+        "temperatureC": 1000505.8066132972,
+        "habitableZone": {
+          "start": 151.91090506254997,
+          "end": 173.20508075688772
+        },
+        "habitableZoneMeters": {
+          "start": 22725871397357.477,
+          "end": 25911480081230.402
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy1p6ffbzo",
+          "name": "Mynen",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 5539231.285702668,
+          "type": "rocky",
+          "temperatureK": 6734.509104638424,
+          "temperatureC": 6461.3591046384245,
+          "atmosphere": {
+            "gaz.O2": 0.49,
+            "gaz.N2": 0.21,
+            "gaz.CO2": 0.2,
+            "gaz.H2O": 0.1
+          },
+          "color": "#ABCCFE",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 4.258694883230927,
+          "massDensity": 5500,
+          "mass": 4.894516637739613e+23,
+          "pressure": 58705.021500436975,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy24yobtg8",
+          "name": "Mynia",
+          "distanceMeters": 134368721922.82909,
+          "sizeMeters": 2965793.0691722143,
+          "type": "rocky",
+          "temperatureK": 3925.332924267576,
+          "temperatureC": 3652.182924267576,
+          "atmosphere": {
+            "gaz.CO2": 0.48,
+            "gaz.O2": 0.32,
+            "gaz.H2O": 0.2
+          },
+          "color": "#ABCCFE",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 2.280173388138865,
+          "massDensity": 5500,
+          "mass": 7.512489008637284e+22,
+          "pressure": 33838.554056798705,
+          "moons": [
+            {
+              "id": "1ud1vy2cv2rszb",
+              "name": "Torar",
+              "distanceMeters": 302933.55628788675,
+              "sizeMeters": 449213.1953325901,
+              "planetId": "1ud1vy24yobtg8",
+              "resources": {
+                "resource.water": 0.02,
+                "resource.regolith": 0.56,
+                "resource.iron": 0.17,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.05,
+                "resource.nickel": 0.05,
+                "water": 0
+              },
+              "color": "#c4a98f"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy2kqx88sc",
+          "name": "Lunos",
+          "distanceMeters": 218495447492.13333,
+          "sizeMeters": 4641097.088569861,
+          "type": "rocky",
+          "temperatureK": 3058.552276735841,
+          "temperatureC": 2785.402276735841,
+          "atmosphere": {
+            "gaz.CO2": 0.46,
+            "gaz.O2": 0.44,
+            "gaz.SO2": 0.05,
+            "gaz.O3": 0.03,
+            "gaz.H2O": 0.02
+          },
+          "color": "#CFD8DB",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 3.5681876065882965,
+          "massDensity": 5500,
+          "mass": 2.8788780787133252e+23,
+          "pressure": 59579.6379707888,
+          "moons": [
+            {
+              "id": "1ud1vy2kr780y8",
+              "name": "Lunex",
+              "distanceMeters": 1117403.6628143662,
+              "sizeMeters": 1075643.2056269909,
+              "planetId": "1ud1vy2kqx88sc",
+              "resources": {
+                "resource.water": 0.16,
+                "resource.regolith": 0.49,
+                "resource.iron": 0.12,
+                "resource.titanium": 0.06,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.05,
+                "resource.nickel": 0.04
+              },
+              "color": "#abb1a0"
+            },
+            {
+              "id": "1ud1vy2snbo9xc",
+              "name": "Selum",
+              "distanceMeters": 1040420.8671877176,
+              "sizeMeters": 1256988.2277964328,
+              "planetId": "1ud1vy2kqx88sc",
+              "resources": {
+                "resource.water": 0.34,
+                "resource.regolith": 0.35,
+                "resource.iron": 0.19,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0.02,
+                "resource.copper": 0,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.02,
+                "water": 0
+              },
+              "color": "#85a7ae"
+            },
+            {
+              "id": "1ud1vy2snbo9fy",
+              "name": "Toror",
+              "distanceMeters": 422677.436900233,
+              "sizeMeters": 921449.0175890193,
+              "planetId": "1ud1vy2kqx88sc",
+              "resources": {
+                "resource.water": 0.27,
+                "resource.regolith": 0.35,
+                "resource.iron": 0.17,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.05,
+                "resource.zinc": 0,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03,
+                "water": 0
+              },
+              "color": "#8ea1a6"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy2sn1ofsn",
+          "name": "Toris",
+          "distanceMeters": 325970604261.18506,
+          "sizeMeters": 80321912.50213312,
+          "type": "gas_giant",
+          "temperatureK": 2490.4299573753815,
+          "temperatureC": 2217.2799573753814,
+          "atmosphere": {
+            "gaz.H2": 0.51,
+            "gaz.He": 0.34,
+            "gaz.CH4": 0.09,
+            "gaz.Ar": 0.06
+          },
+          "color": "#C4C4C4",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 47.88002205363837,
+          "massDensity": 0.11222222222222221,
+          "mass": 3.0449460950786585e+22,
+          "pressure": 149845.80021194974,
+          "moons": [
+            {
+              "id": "1ud1vy2snboa28",
+              "name": "Toror",
+              "distanceMeters": 14251037.647979738,
+              "sizeMeters": 16684615.923632732,
+              "planetId": "1ud1vy2sn1ofsn",
+              "resources": {
+                "resource.water": 0.15,
+                "resource.regolith": 0.63,
+                "resource.iron": 0.02,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.04,
+                "water": 0
+              },
+              "color": "#adc0ba"
+            },
+            {
+              "id": "1ud1vy30jg4gtv",
+              "name": "Torex",
+              "distanceMeters": 10364694.626351321,
+              "sizeMeters": 20996754.3427481,
+              "planetId": "1ud1vy2sn1ofsn",
+              "resources": {
+                "resource.water": 0.4,
+                "resource.regolith": 0.4,
+                "resource.iron": 0.1,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.01,
+                "resource.nickel": 0,
+                "water": 0
+              },
+              "color": "#7bb5c4"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy30j64pxv",
+          "name": "Cryia",
+          "distanceMeters": 444084289917.59863,
+          "sizeMeters": 44584266.42766077,
+          "type": "gas_giant",
+          "temperatureK": 2137.089315497088,
+          "temperatureC": 1863.939315497088,
+          "atmosphere": {
+            "gaz.He": 0.45,
+            "gaz.H2": 0.42,
+            "gaz.CH4": 0.13
+          },
+          "color": "#D7D7D7",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 48.91335179410072,
+          "massDensity": 0.08548148148148148,
+          "mass": 3.9665737967981067e+21,
+          "pressure": 116603.29781039742,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy30j64nkj",
+          "name": "Solum",
+          "distanceMeters": 532901147901.11835,
+          "sizeMeters": 91235281.68328406,
+          "type": "gas_giant",
+          "temperatureK": 1957.0972518159545,
+          "temperatureC": 1683.9472518159546,
+          "atmosphere": {
+            "gaz.He": 0.55,
+            "gaz.H2": 0.16,
+            "gaz.CH4": 0.11,
+            "gaz.Ne": 0.09,
+            "gaz.NH3": 0.08
+          },
+          "color": "#CCEEFD",
+          "hasRing": true,
+          "resources": {},
+          "gravity": 44.60456361085035,
+          "massDensity": 0.12757201646090535,
+          "mass": 5.072738725410883e+22,
+          "pressure": 158688.7299172633,
+          "moons": [
+            {
+              "id": "1ud1vy30jg4fea",
+              "name": "Cryum",
+              "distanceMeters": 5706571.371462828,
+              "sizeMeters": 25619284.588547233,
+              "planetId": "1ud1vy30j64nkj",
+              "resources": {
+                "resource.water": 0.25,
+                "resource.regolith": 0.52,
+                "resource.iron": 0.12,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03,
+                "water": 0
+              },
+              "color": "#98b3ba"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy38f0lhrs",
+        "name": "Bet-760",
+        "type": "B",
+        "mass": 2.1,
+        "luminosity": 25,
+        "color": "#aabfff",
+        "radiusMeters": 1008599821.534785,
+        "temperatureK": 28890,
+        "temperatureC": 28616.85,
+        "habitableZone": {
+          "start": 4.385290096535146,
+          "end": 5
+        },
+        "habitableZoneMeters": {
+          "start": 656039398441.6578,
+          "end": 748000000000
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy38fakxks",
+          "name": "Lunor",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 2143395.339959642,
+          "type": "rocky",
+          "temperatureK": 1138.5415485579617,
+          "temperatureC": 865.3915485579618,
+          "atmosphere": {
+            "gaz.O2": 0.52,
+            "gaz.N2": 0.23,
+            "gaz.H2O": 0.14,
+            "gaz.SO2": 0.11
+          },
+          "color": "#CFD9DB",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 1.6478941384136874,
+          "massDensity": 5500,
+          "mass": 2.8357514203927627e+22,
+          "pressure": 23646.83111696469,
+          "moons": [
+            {
+              "id": "1ud1vy38fkknbb",
+              "name": "Torus",
+              "distanceMeters": 111570.3663753301,
+              "sizeMeters": 290603.8110499066,
+              "planetId": "1ud1vy38fakxks",
+              "resources": {
+                "resource.water": 0.45,
+                "resource.regolith": 0.18,
+                "resource.iron": 0.21,
+                "resource.titanium": 0.03,
+                "resource.plomb": 0,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.05,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03,
+                "water": 0
+              },
+              "color": "#6e9da4"
+            },
+            {
+              "id": "1ud1vy38fkkn0m",
+              "name": "Velen",
+              "distanceMeters": 226170.70072949247,
+              "sizeMeters": 445579.24800869625,
+              "planetId": "1ud1vy38fakxks",
+              "resources": {
+                "resource.water": 0.49,
+                "resource.regolith": 0.23,
+                "resource.iron": 0.08,
+                "resource.titanium": 0.09,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03
+              },
+              "color": "#61afc3"
+            },
+            {
+              "id": "1ud1vy38fkknak",
+              "name": "Lunen",
+              "distanceMeters": 246780.41491706457,
+              "sizeMeters": 262483.94160367164,
+              "planetId": "1ud1vy38fakxks",
+              "resources": {
+                "resource.water": 0.33,
+                "resource.regolith": 0.55,
+                "resource.iron": 0.04,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0.04,
+                "resource.copper": 0,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.02,
+                "resource.nickel": 0,
+                "water": 0
+              },
+              "color": "#8bc3d2"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy38fakv61",
+          "name": "Mynex",
+          "distanceMeters": 129497864311.05574,
+          "sizeMeters": 2452115.5361853004,
+          "type": "rocky",
+          "temperatureK": 683.5057647019412,
+          "temperatureC": 410.3557647019412,
+          "atmosphere": {
+            "gaz.CO2": 0.57,
+            "gaz.H2O": 0.18,
+            "gaz.CH4": 0.15,
+            "gaz.SO2": 0.05,
+            "gaz.N2": 0.05
+          },
+          "color": "#F4E6B9",
+          "hasRing": false,
+          "resources": {
+            "resource.gold": 0.1
+          },
+          "gravity": 6.61549849935937,
+          "massDensity": 19300,
+          "mass": 1.4899740965222657e+23,
+          "pressure": 101298.93567034144,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy3gbf134n",
+          "name": "Velus",
+          "distanceMeters": 206827697382.04123,
+          "sizeMeters": 9354941.818759913,
+          "type": "rocky",
+          "temperatureK": 538.193905501185,
+          "temperatureC": 265.043905501185,
+          "atmosphere": {
+            "gaz.CO2": 0.57,
+            "gaz.N2": 0.25,
+            "gaz.H2O": 0.18
+          },
+          "color": "#BBC3B2",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.36,
+            "resource.gold": 0.29,
+            "resource.copper": 0.1,
+            "resource.nickel": 0.72,
+            "resource.zinc": 0.24,
+            "resource.aluminium": 0.56,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.11,
+            "resource.lithium": 0.12,
+            "resource.uranium": 0.17
+          },
+          "gravity": 11.314027430749908,
+          "massDensity": 8651.906137184118,
+          "mass": 3.708802389000779e+24,
+          "pressure": 173244.53130644633,
+          "moons": [
+            {
+              "id": "1ud1vy3gbp0xi7",
+              "name": "Toren",
+              "distanceMeters": 885273.445206957,
+              "sizeMeters": 2242784.4255812755,
+              "planetId": "1ud1vy3gbf134n",
+              "resources": {
+                "resource.water": 0.3,
+                "resource.regolith": 0.53,
+                "resource.iron": 0.02,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.02
+              },
+              "color": "#92c3c7"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy3gbf13n5",
+          "name": "Velar",
+          "distanceMeters": 405617195533.51013,
+          "sizeMeters": 95165170.40441404,
+          "type": "gas_giant",
+          "temperatureK": 377.96310444433027,
+          "temperatureC": 104.81310444433029,
+          "atmosphere": {
+            "gaz.He": 0.66,
+            "gaz.H2": 0.2,
+            "gaz.N2": 0.15
+          },
+          "color": "#D7D7D7",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 30.31500650017771,
+          "massDensity": 0.1225889255592226,
+          "mass": 5.5320226519239776e+22,
+          "pressure": 103638.29832588269,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy3gbf13ij",
+          "name": "Nexos",
+          "distanceMeters": 486740634640.21216,
+          "sizeMeters": 77733131.01879688,
+          "type": "gas_giant",
+          "temperatureK": 347.2397321422956,
+          "temperatureC": 74.08973214229565,
+          "atmosphere": {
+            "gaz.He": 0.65,
+            "gaz.H2": 0.19,
+            "gaz.CH4": 0.16
+          },
+          "color": "#D7D7D7",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 48.21923685473901,
+          "massDensity": 0.09466666666666666,
+          "mass": 2.3281673302661216e+22,
+          "pressure": 127300.11243147026,
+          "moons": [
+            {
+              "id": "1ud1vy3gbp0vy9",
+              "name": "Galex",
+              "distanceMeters": 18635737.445213366,
+              "sizeMeters": 11381359.89555663,
+              "planetId": "1ud1vy3gbf13ij",
+              "resources": {
+                "resource.water": 0.29,
+                "resource.regolith": 0.47,
+                "resource.iron": 0.12,
+                "resource.titanium": 0,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.02,
+                "water": 0
+              },
+              "color": "#94b3b5"
+            },
+            {
+              "id": "1ud1vy3gbp0wan",
+              "name": "Rynon",
+              "distanceMeters": 12572054.959670456,
+              "sizeMeters": 16202090.542779764,
+              "planetId": "1ud1vy3gbf13ij",
+              "resources": {
+                "resource.water": 0.11,
+                "resource.regolith": 0.72,
+                "resource.iron": 0.07,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.01,
+                "water": 0
+              },
+              "color": "#b8c0bf"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy3gbf133y",
+          "name": "Mynex",
+          "distanceMeters": 584088761568.2545,
+          "sizeMeters": 70495048.12425633,
+          "type": "gas_giant",
+          "temperatureK": 316.10314301694154,
+          "temperatureC": 42.95314301694157,
+          "atmosphere": {
+            "gaz.He": 0.48,
+            "gaz.H2": 0.43,
+            "gaz.CH4": 0.09
+          },
+          "color": "#D7D7D7",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 29.58875374870621,
+          "massDensity": 0.07762962962962965,
+          "mass": 1.4239737075737473e+22,
+          "pressure": 64056.846815899386,
+          "moons": [
+            {
+              "id": "1ud1vy3gbp0wks",
+              "name": "Rynos",
+              "distanceMeters": 8522681.021183617,
+              "sizeMeters": 12651726.42039052,
+              "planetId": "1ud1vy3gbf133y",
+              "resources": {
+                "resource.water": 0.29,
+                "resource.regolith": 0.34,
+                "resource.iron": 0.14,
+                "resource.titanium": 0.05,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.07,
+                "resource.zinc": 0,
+                "resource.gold": 0,
+                "resource.nickel": 0.07
+              },
+              "color": "#8ca4a4"
+            },
+            {
+              "id": "1ud1vy3o7th2md",
+              "name": "Rynos",
+              "distanceMeters": 10343115.290990535,
+              "sizeMeters": 16862112.42989121,
+              "planetId": "1ud1vy3gbf133y",
+              "resources": {
+                "resource.water": 0.07,
+                "resource.regolith": 0.69,
+                "resource.iron": 0.06,
+                "resource.titanium": 0.06,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.04,
+                "resource.gold": 0,
+                "resource.nickel": 0.02,
+                "water": 0
+              },
+              "color": "#bfbdb2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy3o79hvr9",
+        "name": "Del-365",
+        "type": "H",
+        "mass": 1,
+        "luminosity": 1,
+        "color": "#fff4ea",
+        "radiusMeters": 696000000,
+        "temperatureK": 5778,
+        "temperatureC": 5504.85,
+        "habitableZone": {
+          "start": 0.8770580193070292,
+          "end": 1
+        },
+        "habitableZoneMeters": {
+          "start": 131207879688.33157,
+          "end": 149600000000
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy3o7jhbuj",
+          "name": "Torus",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 9169497.947569648,
+          "type": "rocky",
+          "temperatureK": 511.71203430498286,
+          "temperatureC": 238.5620343049829,
+          "atmosphere": {
+            "gaz.CO2": 0.35,
+            "gaz.O2": 0.33,
+            "gaz.N2": 0.32
+          },
+          "color": "#ABCCFD",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.1,
+            "resource.gold": 0.1,
+            "resource.copper": 0.23,
+            "resource.nickel": 0.1,
+            "resource.zinc": 0.2,
+            "resource.aluminium": 0.22,
+            "resource.titanium": 0.11,
+            "resource.plomb": 0.2,
+            "resource.lithium": 0.1,
+            "resource.uranium": 0.12
+          },
+          "gravity": 11.078991017378296,
+          "massDensity": 8643.513513513513,
+          "mass": 3.4891979652378544e+24,
+          "pressure": 166578.78776468456,
+          "moons": [
+            {
+              "id": "1ud1vy3o7th5do",
+              "name": "Rynum",
+              "distanceMeters": 1092824.3557677744,
+              "sizeMeters": 1961431.2208805385,
+              "planetId": "1ud1vy3o7jhbuj",
+              "resources": {
+                "resource.water": 0.45,
+                "resource.regolith": 0.39,
+                "resource.iron": 0.01,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.01
+              },
+              "color": "#76c3cb"
+            },
+            {
+              "id": "1ud1vy3o7th4k0",
+              "name": "Lunum",
+              "distanceMeters": 1703954.1244899158,
+              "sizeMeters": 2667417.672216749,
+              "planetId": "1ud1vy3o7jhbuj",
+              "resources": {
+                "resource.water": 0.42,
+                "resource.regolith": 0.41,
+                "resource.iron": 0.05,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.01,
+                "resource.gold": 0,
+                "resource.nickel": 0.03
+              },
+              "color": "#78bac9"
+            },
+            {
+              "id": "1ud1vy3o7th4im",
+              "name": "Toren",
+              "distanceMeters": 1295998.3565847443,
+              "sizeMeters": 1407895.215165083,
+              "planetId": "1ud1vy3o7jhbuj",
+              "resources": {
+                "resource.water": 0.12,
+                "resource.regolith": 0.58,
+                "resource.iron": 0.06,
+                "resource.titanium": 0.06,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.04,
+                "resource.nickel": 0.05
+              },
+              "color": "#b4baa8"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy3o7jhccv",
+          "name": "Xanor",
+          "distanceMeters": 109537995803.10648,
+          "sizeMeters": 5811711.396695166,
+          "type": "rocky",
+          "temperatureK": 328.71497017412065,
+          "temperatureC": 55.564970174120674,
+          "atmosphere": {
+            "gaz.N2": 0.36,
+            "gaz.CO2": 0.23,
+            "gaz.H2O": 0.16,
+            "gaz.O2": 0.13,
+            "gaz.O3": 0.12
+          },
+          "color": "#AACAFA",
+          "hasRing": true,
+          "resources": {
+            "resource.water": 0.16,
+            "resource.coal": 0.11,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.2,
+            "resource.gold": 0.1,
+            "resource.copper": 0.16,
+            "resource.nickel": 0.39,
+            "resource.zinc": 0.11,
+            "resource.aluminium": 0.35,
+            "resource.titanium": 0.19,
+            "resource.plomb": 0.2,
+            "resource.lithium": 0.1,
+            "resource.uranium": 0.1
+          },
+          "gravity": 5.44834667524081,
+          "massDensity": 6706.506607929514,
+          "mass": 6.892981261114435e+23,
+          "pressure": 78767.54347586386,
+          "moons": [
+            {
+              "id": "1ud1vy3o7th557",
+              "name": "Galor",
+              "distanceMeters": 1285961.5216828578,
+              "sizeMeters": 656012.8066475013,
+              "planetId": "1ud1vy3o7jhccv",
+              "resources": {
+                "resource.water": 0.39,
+                "resource.regolith": 0.34,
+                "resource.iron": 0.01,
+                "resource.titanium": 0.1,
+                "resource.plomb": 0.05,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.04,
+                "resource.gold": 0,
+                "resource.nickel": 0.02,
+                "water": 0
+              },
+              "color": "#78bbc3"
+            },
+            {
+              "id": "1ud1vy3w3xxdbl",
+              "name": "Cryen",
+              "distanceMeters": 941047.1524984582,
+              "sizeMeters": 984914.7707048387,
+              "planetId": "1ud1vy3o7jhccv",
+              "resources": {
+                "resource.water": 0.48,
+                "resource.regolith": 0.13,
+                "resource.iron": 0.08,
+                "resource.titanium": 0.13,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.06,
+                "resource.nickel": 0.05,
+                "water": 0
+              },
+              "color": "#60aab2"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy3w3nxlgr",
+          "name": "Rynar",
+          "distanceMeters": 147722766307.4716,
+          "sizeMeters": 6589195.864052404,
+          "type": "habitable",
+          "temperatureK": 280.0908157189383,
+          "temperatureC": 6.940815718938325,
+          "atmosphere": {
+            "gaz.O2": 0.21,
+            "gaz.N2": 0.78,
+            "gaz.Ar": 0.01
+          },
+          "color": "#A9CBFC",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.16,
+            "resource.copper": 0.17,
+            "resource.nickel": 0.15,
+            "resource.zinc": 0.15,
+            "resource.aluminium": 0.1,
+            "resource.titanium": 0.22,
+            "resource.plomb": 0.1,
+            "resource.lithium": 0.1,
+            "resource.water": 0.9199188834669814,
+            "resource.organicMatter": 0.4069229878476872
+          },
+          "gravity": 2.839978215637703,
+          "massDensity": 3083.317545801363,
+          "mass": 4.618640166023559e+23,
+          "pressure": 37071.56878834004,
+          "moons": []
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy3w3dy438",
+        "name": "Al-532",
+        "type": "I",
+        "mass": 1,
+        "luminosity": 1,
+        "color": "#fff4ea",
+        "radiusMeters": 696000000,
+        "temperatureK": 5778,
+        "temperatureC": 5504.85,
+        "habitableZone": {
+          "start": 0.8770580193070292,
+          "end": 1
+        },
+        "habitableZoneMeters": {
+          "start": 131207879688.33157,
+          "end": 149600000000
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy3w3nxkqw",
+          "name": "Solis",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 7132099.05775705,
+          "type": "rocky",
+          "temperatureK": 511.50877232511993,
+          "temperatureC": 238.35877232511996,
+          "atmosphere": {
+            "gaz.O2": 0.41,
+            "gaz.N2": 0.34,
+            "gaz.H2O": 0.16,
+            "gaz.CO2": 0.09
+          },
+          "color": "#ABCCFC",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.23,
+            "resource.gold": 0.1,
+            "resource.copper": 0.22,
+            "resource.nickel": 0.17,
+            "resource.zinc": 0.1,
+            "resource.aluminium": 0.14,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.19,
+            "resource.lithium": 0.12,
+            "resource.uranium": 0.1
+          },
+          "gravity": 8.743324173043781,
+          "massDensity": 8769.904761904761,
+          "mass": 1.6658872289344824e+24,
+          "pressure": 112333.5939478992,
+          "moons": [
+            {
+              "id": "1ud1vy3w3xxbb9",
+              "name": "Zynos",
+              "distanceMeters": 781527.4060729095,
+              "sizeMeters": 1566266.2062583212,
+              "planetId": "1ud1vy3w3nxkqw",
+              "resources": {
+                "resource.water": 0.12,
+                "resource.regolith": 0.66,
+                "resource.iron": 0.1,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.01
+              },
+              "color": "#b8bbb2"
+            },
+            {
+              "id": "1ud1vy3w3xxd6v",
+              "name": "Astos",
+              "distanceMeters": 400233.62250072265,
+              "sizeMeters": 1161588.5326975991,
+              "planetId": "1ud1vy3w3nxkqw",
+              "resources": {
+                "resource.water": 0.39,
+                "resource.regolith": 0.29,
+                "resource.iron": 0.05,
+                "resource.titanium": 0.03,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.05,
+                "resource.zinc": 0.08,
+                "resource.gold": 0.05,
+                "resource.nickel": 0.03,
+                "water": 0
+              },
+              "color": "#82b9ac"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy3w3nxk44",
+          "name": "Toren",
+          "distanceMeters": 146303378146.9682,
+          "sizeMeters": 4840417.223624188,
+          "type": "rocky",
+          "temperatureK": 282.85344266078897,
+          "temperatureC": 9.703442660788994,
+          "atmosphere": {
+            "gaz.N2": 0.5,
+            "gaz.O2": 0.25,
+            "gaz.CO2": 0.25
+          },
+          "color": "#ABCCFD",
+          "hasRing": false,
+          "resources": {
+            "resource.water": 0.1,
+            "resource.organicMatter": 0.22,
+            "resource.coal": 0.1,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.1,
+            "resource.copper": 0.1,
+            "resource.nickel": 0.18,
+            "resource.zinc": 0.21,
+            "resource.aluminium": 0.1,
+            "resource.titanium": 0.27,
+            "resource.plomb": 0.2,
+            "resource.lithium": 0.1
+          },
+          "gravity": 3.2658834086093207,
+          "massDensity": 4826.73595505618,
+          "mass": 2.8661608314415115e+23,
+          "pressure": 47141.141879442584,
+          "moons": [
+            {
+              "id": "1ud1vy4402dkor",
+              "name": "Velos",
+              "distanceMeters": 292636.93437972234,
+              "sizeMeters": 1077494.7956442866,
+              "planetId": "1ud1vy3w3nxk44",
+              "resources": {
+                "resource.water": 0.02,
+                "resource.regolith": 0.82,
+                "resource.iron": 0.01,
+                "resource.titanium": 0.05,
+                "resource.plomb": 0.02,
+                "resource.copper": 0,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.02
+              },
+              "color": "#cbcabe"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy43zsdrgw",
+          "name": "Solus",
+          "distanceMeters": 179369348465.07434,
+          "sizeMeters": 6732819.101282852,
+          "type": "rocky",
+          "temperatureK": 257.28519836748575,
+          "temperatureC": -15.86480163251423,
+          "atmosphere": {
+            "gaz.CO2": 0.52,
+            "gaz.O2": 0.28,
+            "gaz.N2": 0.13,
+            "gaz.H2O": 0.06
+          },
+          "color": "#ABCBFB",
+          "hasRing": false,
+          "resources": {
+            "resource.water": 0.1,
+            "resource.organicMatter": 0.1,
+            "resource.coal": 0.11,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.49,
+            "resource.copper": 0.64,
+            "resource.nickel": 0.1,
+            "resource.zinc": 0.2,
+            "resource.aluminium": 0.69,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.1,
+            "resource.lithium": 0.12
+          },
+          "gravity": 5.092653965916442,
+          "massDensity": 5411.066666666666,
+          "mass": 8.647137099265452e+23,
+          "pressure": 80107.1928253553,
+          "moons": [
+            {
+              "id": "1ud1vy4402dl7z",
+              "name": "Zynen",
+              "distanceMeters": 387865.02462755115,
+              "sizeMeters": 1493873.7962065453,
+              "planetId": "1ud1vy43zsdrgw",
+              "resources": {
+                "resource.water": 0.3,
+                "resource.regolith": 0.32,
+                "resource.iron": 0.08,
+                "resource.titanium": 0.16,
+                "resource.plomb": 0,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.05,
+                "resource.nickel": 0.05,
+                "water": 0
+              },
+              "color": "#88ada6"
+            },
+            {
+              "id": "1ud1vy4402dity",
+              "name": "Torus",
+              "distanceMeters": 587571.7035386423,
+              "sizeMeters": 1839638.2206278588,
+              "planetId": "1ud1vy43zsdrgw",
+              "resources": {
+                "resource.water": 0.43,
+                "resource.regolith": 0.38,
+                "resource.iron": 0.06,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0.04,
+                "resource.copper": 0,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.02,
+                "water": 0
+              },
+              "color": "#76bbc7"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy43zsdsm3",
+          "name": "Xania",
+          "distanceMeters": 358620059114.9024,
+          "sizeMeters": 59368217.08301055,
+          "type": "gas_giant",
+          "temperatureK": 180.3403129010164,
+          "temperatureC": -92.80968709898357,
+          "atmosphere": {
+            "gaz.He": 0.5,
+            "gaz.H2": 0.3,
+            "gaz.N2": 0.12,
+            "gaz.CH4": 0.08
+          },
+          "color": "#E1E1E1",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 31.162589278459972,
+          "massDensity": 0.12518518518518518,
+          "mass": 1.3715561070479714e+22,
+          "pressure": 108792.22051175388,
+          "moons": [
+            {
+              "id": "1ud1vy4402did3",
+              "name": "Velon",
+              "distanceMeters": 8835673.738621678,
+              "sizeMeters": 12400360.21721234,
+              "planetId": "1ud1vy43zsdsm3",
+              "resources": {
+                "resource.water": 0.34,
+                "resource.regolith": 0.32,
+                "resource.iron": 0.1,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.05,
+                "resource.gold": 0,
+                "resource.nickel": 0.04,
+                "water": 0
+              },
+              "color": "#82adaf"
+            },
+            {
+              "id": "1ud1vy4402dixu",
+              "name": "Rynos",
+              "distanceMeters": 7049066.327351332,
+              "sizeMeters": 16295253.240758965,
+              "planetId": "1ud1vy43zsdsm3",
+              "resources": {
+                "resource.water": 0.25,
+                "resource.regolith": 0.61,
+                "resource.iron": 0.01,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.04,
+                "resource.nickel": 0.02
+              },
+              "color": "#a3c8be"
+            },
+            {
+              "id": "1ud1vy4402djs8",
+              "name": "Selar",
+              "distanceMeters": 7278627.951985908,
+              "sizeMeters": 6810675.9353843825,
+              "planetId": "1ud1vy43zsdsm3",
+              "resources": {
+                "resource.water": 0.29,
+                "resource.regolith": 0.19,
+                "resource.iron": 0.24,
+                "resource.titanium": 0.09,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.06,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.04,
+                "resource.nickel": 0.04
+              },
+              "color": "#8a9389"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy43zsdsx6",
+          "name": "Mynos",
+          "distanceMeters": 512714852686.61786,
+          "sizeMeters": 77316317.74189043,
+          "type": "gas_giant",
+          "temperatureK": 151.8469275119218,
+          "temperatureC": -121.30307248807819,
+          "atmosphere": {
+            "gaz.H2": 0.64,
+            "gaz.CH4": 0.15,
+            "gaz.N2": 0.13,
+            "gaz.NH3": 0.08
+          },
+          "color": "#CDF0FF",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 27.353265703350853,
+          "massDensity": 0.15507407407407406,
+          "mass": 3.7527644476848197e+22,
+          "pressure": 118293.19178012648,
+          "moons": [
+            {
+              "id": "1ud1vy4402dkkt",
+              "name": "Zynum",
+              "distanceMeters": 17907040.24991096,
+              "sizeMeters": 20145908.29572962,
+              "planetId": "1ud1vy43zsdsx6",
+              "resources": {
+                "resource.water": 0.28,
+                "resource.regolith": 0.39,
+                "resource.iron": 0.16,
+                "resource.titanium": 0.06,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.05,
+                "resource.zinc": 0.04,
+                "resource.gold": 0.03,
+                "resource.nickel": 0
+              },
+              "color": "#94a9a5"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4bvwu1ag",
+          "name": "Mynus",
+          "distanceMeters": 615257823223.9414,
+          "sizeMeters": 85188418.73671338,
+          "type": "gas_giant",
+          "temperatureK": 137.53241660041624,
+          "temperatureC": -135.61758339958374,
+          "atmosphere": {
+            "gaz.He": 0.48,
+            "gaz.H2": 0.4,
+            "gaz.H2O": 0.07,
+            "gaz.Ne": 0.05
+          },
+          "color": "#A6A6A6",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 26.21503617210554,
+          "massDensity": 0.09014814814814816,
+          "mass": 2.9180793879909387e+22,
+          "pressure": 65905.0418623582,
+          "moons": [
+            {
+              "id": "1ud1vy4bw6ts5j",
+              "name": "Astia",
+              "distanceMeters": 18469766.233422406,
+              "sizeMeters": 23591032.98902552,
+              "planetId": "1ud1vy4bvwu1ag",
+              "resources": {
+                "resource.water": 0.22,
+                "resource.regolith": 0.42,
+                "resource.iron": 0.11,
+                "resource.titanium": 0.03,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.08,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.06,
+                "water": 0
+              },
+              "color": "#a2ae9c"
+            },
+            {
+              "id": "1ud1vy4bw6tr9k",
+              "name": "Rynos",
+              "distanceMeters": 17111026.628206115,
+              "sizeMeters": 14252403.68801434,
+              "planetId": "1ud1vy4bvwu1ag",
+              "resources": {
+                "resource.water": 0.4,
+                "resource.regolith": 0.19,
+                "resource.iron": 0.19,
+                "resource.titanium": 0,
+                "resource.plomb": 0.08,
+                "resource.copper": 0.06,
+                "resource.zinc": 0,
+                "resource.gold": 0.08,
+                "resource.nickel": 0.02
+              },
+              "color": "#7ca29f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy4bvmujnl",
+        "name": "Eps-200",
+        "type": "G",
+        "mass": 1,
+        "luminosity": 1,
+        "color": "#fff4ea",
+        "radiusMeters": 696000000,
+        "temperatureK": 5778,
+        "temperatureC": 5504.85,
+        "habitableZone": {
+          "start": 0.8770580193070292,
+          "end": 1
+        },
+        "habitableZoneMeters": {
+          "start": 131207879688.33157,
+          "end": 149600000000
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy4bvwtz6n",
+          "name": "Rynus",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 4798947.408403813,
+          "type": "rocky",
+          "temperatureK": 507.7484256976553,
+          "temperatureC": 234.59842569765533,
+          "atmosphere": {
+            "gaz.O2": 0.61,
+            "gaz.N2": 0.3,
+            "gaz.SO2": 0.06,
+            "gaz.O3": 0.04
+          },
+          "color": "#CFD8DB",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.1,
+            "resource.gold": 0.1,
+            "resource.copper": 0.22,
+            "resource.nickel": 0.18,
+            "resource.zinc": 0.1,
+            "resource.aluminium": 0.21,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.12,
+            "resource.lithium": 0.1,
+            "resource.uranium": 0.1
+          },
+          "gravity": 5.720557747977196,
+          "massDensity": 8527.624060150376,
+          "mass": 4.9347441419240745e+23,
+          "pressure": 82831.81679726127,
+          "moons": [
+            {
+              "id": "1ud1vy4bw6tsrd",
+              "name": "Zynia",
+              "distanceMeters": 982821.607602222,
+              "sizeMeters": 1380531.6806520794,
+              "planetId": "1ud1vy4bvwtz6n",
+              "resources": {
+                "resource.water": 0.32,
+                "resource.regolith": 0.47,
+                "resource.iron": 0.03,
+                "resource.titanium": 0.06,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.03
+              },
+              "color": "#89bdc3"
+            },
+            {
+              "id": "1ud1vy4bw6ts80",
+              "name": "Lunex",
+              "distanceMeters": 379473.8026647414,
+              "sizeMeters": 792156.9571098946,
+              "planetId": "1ud1vy4bvwtz6n",
+              "resources": {
+                "resource.water": 0.34,
+                "resource.regolith": 0.37,
+                "resource.iron": 0.08,
+                "resource.titanium": 0.07,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.03
+              },
+              "color": "#85b3b4"
+            },
+            {
+              "id": "1ud1vy4bw6tr0x",
+              "name": "Cryus",
+              "distanceMeters": 551115.4633371524,
+              "sizeMeters": 957751.789702237,
+              "planetId": "1ud1vy4bvwtz6n",
+              "resources": {
+                "resource.water": 0.11,
+                "resource.regolith": 0.67,
+                "resource.iron": 0.1,
+                "resource.titanium": 0.07,
+                "resource.plomb": 0,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.01,
+                "resource.nickel": 0
+              },
+              "color": "#b4b8b8"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4bvwtys6",
+          "name": "Torar",
+          "distanceMeters": 133061377029.61412,
+          "sizeMeters": 9297754.739256857,
+          "type": "rocky",
+          "temperatureK": 296.88930852556075,
+          "temperatureC": 23.739308525560773,
+          "atmosphere": {
+            "gaz.N2": 0.35,
+            "gaz.CO2": 0.3,
+            "gaz.O2": 0.28,
+            "gaz.Ar": 0.07
+          },
+          "color": "#AACAFB",
+          "hasRing": false,
+          "resources": {
+            "resource.water": 0.6,
+            "resource.coal": 0.1,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.16,
+            "resource.copper": 0.24,
+            "resource.nickel": 0.25,
+            "resource.zinc": 0.13,
+            "resource.aluminium": 0.13,
+            "resource.titanium": 1,
+            "resource.plomb": 0.17,
+            "resource.lithium": 0.1
+          },
+          "gravity": 5.84296644678914,
+          "massDensity": 4495.63422818792,
+          "mass": 1.8920118377622455e+24,
+          "pressure": 88353.15740299811,
+          "moons": [
+            {
+              "id": "1ud1vy4jsb9yru",
+              "name": "Cryum",
+              "distanceMeters": 1285783.7169916658,
+              "sizeMeters": 1451690.0365232315,
+              "planetId": "1ud1vy4bvwtys6",
+              "resources": {
+                "resource.water": 0.11,
+                "resource.regolith": 0.64,
+                "resource.iron": 0.02,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0.01,
+                "resource.copper": 0,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.06,
+                "resource.nickel": 0.06
+              },
+              "color": "#b6c2b0"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4js1a83m",
+          "name": "Cryis",
+          "distanceMeters": 260917394272.84467,
+          "sizeMeters": 9075259.384172307,
+          "type": "rocky",
+          "temperatureK": 211.95297564270035,
+          "temperatureC": -61.197024357299625,
+          "atmosphere": {
+            "gaz.N2": 0.55,
+            "gaz.CO2": 0.21,
+            "gaz.O2": 0.18,
+            "gaz.H2O": 0.05
+          },
+          "color": "#ABCBFC",
+          "hasRing": false,
+          "resources": {
+            "resource.coal": 0.11,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.19,
+            "resource.copper": 0.12,
+            "resource.nickel": 0.1,
+            "resource.zinc": 0.15,
+            "resource.aluminium": 0.1,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.21,
+            "resource.lithium": 0.1
+          },
+          "gravity": 7.618623465851356,
+          "massDensity": 6005.5546875,
+          "mass": 2.3503302399170727e+24,
+          "pressure": 106328.0006214585,
+          "moons": [
+            {
+              "id": "1ud1vy4jsba0i9",
+              "name": "Cryos",
+              "distanceMeters": 771789.5434112297,
+              "sizeMeters": 1355142.0857532439,
+              "planetId": "1ud1vy4js1a83m",
+              "resources": {
+                "resource.water": 0.27,
+                "resource.regolith": 0.58,
+                "resource.iron": 0.03,
+                "resource.titanium": 0.04,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.02,
+                "resource.nickel": 0
+              },
+              "color": "#98c2c8"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4js1a92n",
+          "name": "Cryum",
+          "distanceMeters": 313100873127.4136,
+          "sizeMeters": 48456222.068044834,
+          "type": "gas_giant",
+          "temperatureK": 193.3125596336238,
+          "temperatureC": -79.83744036637617,
+          "atmosphere": {
+            "gaz.He": 0.42,
+            "gaz.H2": 0.4,
+            "gaz.CH4": 0.12,
+            "gaz.N2": 0.07
+          },
+          "color": "#E1E1E1",
+          "hasRing": true,
+          "resources": {},
+          "gravity": 47.109392706866345,
+          "massDensity": 0.11114778144481113,
+          "mass": 6.621373306210056e+21,
+          "pressure": 146022.46428443815,
+          "moons": [
+            {
+              "id": "1ud1vy4jsb9yhs",
+              "name": "Cryor",
+              "distanceMeters": 11379995.967716232,
+              "sizeMeters": 11361069.629493084,
+              "planetId": "1ud1vy4js1a92n",
+              "resources": {
+                "resource.water": 0.26,
+                "resource.regolith": 0.51,
+                "resource.iron": 0.09,
+                "resource.titanium": 0.04,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.03
+              },
+              "color": "#97b7b8"
+            },
+            {
+              "id": "1ud1vy4jsba0jy",
+              "name": "Astar",
+              "distanceMeters": 10804935.99170196,
+              "sizeMeters": 6572596.236733263,
+              "planetId": "1ud1vy4js1a92n",
+              "resources": {
+                "resource.water": 0.05,
+                "resource.regolith": 0.49,
+                "resource.iron": 0.18,
+                "resource.titanium": 0.12,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.04,
+                "resource.zinc": 0.05,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.01
+              },
+              "color": "#bca48f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy4rnvr0c5",
+        "name": "Eta-341",
+        "type": "K",
+        "mass": 0.8,
+        "luminosity": 0.4,
+        "color": "#ffd2a1",
+        "radiusMeters": 622521324.9359415,
+        "temperatureK": 3654.328064090579,
+        "temperatureC": 3381.178064090579,
+        "habitableZone": {
+          "start": 0.5547001962252291,
+          "end": 0.6324555320336759
+        },
+        "habitableZoneMeters": {
+          "start": 82983149355.29428,
+          "end": 94615347592.23792
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy4ro5qhfp",
+          "name": "Lunor",
+          "distanceMeters": 44880000000,
+          "sizeMeters": 4313387.914707215,
+          "type": "rocky",
+          "temperatureK": 407.798256030589,
+          "temperatureC": 134.64825603058904,
+          "atmosphere": {
+            "gaz.N2": 0.41,
+            "gaz.CO2": 0.35,
+            "gaz.O2": 0.17,
+            "gaz.H2O": 0.07
+          },
+          "color": "#ABCCFC",
+          "hasRing": false,
+          "resources": {
+            "resource.coal": 0.13,
+            "resource.iron": 0.19,
+            "resource.gold": 0.1,
+            "resource.copper": 0.14,
+            "resource.nickel": 0.1,
+            "resource.zinc": 0.14,
+            "resource.aluminium": 0.1,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.17,
+            "resource.lithium": 0.1,
+            "resource.uranium": 0.12
+          },
+          "gravity": 5.013334649437082,
+          "massDensity": 8314.647482014387,
+          "mass": 3.493799794395657e+23,
+          "pressure": 73415.75554226324,
+          "moons": [
+            {
+              "id": "1ud1vy4rofq6o2",
+              "name": "Nexon",
+              "distanceMeters": 544062.0710381682,
+              "sizeMeters": 914394.9285071188,
+              "planetId": "1ud1vy4ro5qhfp",
+              "resources": {
+                "resource.water": 0.59,
+                "resource.regolith": 0.12,
+                "resource.iron": 0,
+                "resource.titanium": 0.04,
+                "resource.plomb": 0.08,
+                "resource.copper": 0.1,
+                "resource.zinc": 0,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.06
+              },
+              "color": "#55b5c1"
+            },
+            {
+              "id": "1ud1vy4rofq906",
+              "name": "Velen",
+              "distanceMeters": 1019705.5296470007,
+              "sizeMeters": 1240613.7697457804,
+              "planetId": "1ud1vy4ro5qhfp",
+              "resources": {
+                "resource.water": 0.34,
+                "resource.regolith": 0.32,
+                "resource.iron": 0.14,
+                "resource.titanium": 0.08,
+                "resource.plomb": 0,
+                "resource.copper": 0.05,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.02
+              },
+              "color": "#85a8a8"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4ro5qhbk",
+          "name": "Lunos",
+          "distanceMeters": 153644262923.94266,
+          "sizeMeters": 4328796.123795795,
+          "type": "rocky",
+          "temperatureK": 219.54921461821746,
+          "temperatureC": -53.600785381782515,
+          "atmosphere": {
+            "gaz.O2": 0.51,
+            "gaz.CO2": 0.26,
+            "gaz.N2": 0.13,
+            "gaz.Ar": 0.1
+          },
+          "color": "#ABCBFC",
+          "hasRing": false,
+          "resources": {
+            "resource.coal": 0.1,
+            "resource.petrol": 0.1,
+            "resource.iron": 0.41,
+            "resource.copper": 0.23,
+            "resource.nickel": 0.13,
+            "resource.zinc": 0.19,
+            "resource.aluminium": 0.69,
+            "resource.titanium": 0.1,
+            "resource.plomb": 0.1,
+            "resource.lithium": 0.1
+          },
+          "gravity": 3.181233698210782,
+          "massDensity": 5257.316279069767,
+          "mass": 2.232873519582064e+23,
+          "pressure": 48216.0572335423,
+          "moons": [
+            {
+              "id": "1ud1vy4rofq6qb",
+              "name": "Rynis",
+              "distanceMeters": 590658.9069364063,
+              "sizeMeters": 444476.1866796587,
+              "planetId": "1ud1vy4ro5qhbk",
+              "resources": {
+                "resource.water": 0.23,
+                "resource.regolith": 0.49,
+                "resource.iron": 0.05,
+                "resource.titanium": 0.09,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.02,
+                "resource.zinc": 0.03,
+                "resource.gold": 0.04,
+                "resource.nickel": 0.01
+              },
+              "color": "#9bbbb6"
+            },
+            {
+              "id": "1ud1vy4rofq71h",
+              "name": "Astum",
+              "distanceMeters": 815224.4166137,
+              "sizeMeters": 1155020.7811327002,
+              "planetId": "1ud1vy4ro5qhbk",
+              "resources": {
+                "resource.water": 0.2,
+                "resource.regolith": 0.69,
+                "resource.iron": 0.02,
+                "resource.titanium": 0.02,
+                "resource.plomb": 0,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.01,
+                "water": 0
+              },
+              "color": "#a9c7c8"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4ro5qh6b",
+          "name": "Solus",
+          "distanceMeters": 223824340553.20343,
+          "sizeMeters": 8877704.291900506,
+          "type": "rocky",
+          "temperatureK": 181.79297596213516,
+          "temperatureC": -91.35702403786482,
+          "atmosphere": {
+            "gaz.N2": 0.5,
+            "gaz.O2": 0.27,
+            "gaz.CO2": 0.23
+          },
+          "color": "#ABCDFF",
+          "hasRing": false,
+          "resources": {
+            "resource.coal": 0.1,
+            "resource.petrol": 0.1
+          },
+          "gravity": 1.867543484224088,
+          "massDensity": 0,
+          "mass": 0,
+          "pressure": 26760.16051393095,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy4ro5qf0c",
+          "name": "Cryia",
+          "distanceMeters": 268589208663.84412,
+          "sizeMeters": 2278944.9727872116,
+          "type": "rocky",
+          "temperatureK": 166.3499876013157,
+          "temperatureC": -106.80001239868429,
+          "atmosphere": {
+            "gaz.N2": 0.43,
+            "gaz.O2": 0.3,
+            "gaz.H2O": 0.16,
+            "gaz.CO2": 0.11
+          },
+          "color": "#ABCCFE",
+          "hasRing": false,
+          "resources": {
+            "resource.petrol": 0.1
+          },
+          "gravity": 1.8043742328109533,
+          "massDensity": 0,
+          "mass": 0,
+          "pressure": 23305.472786343737,
+          "moons": []
+        }
+      ]
+    },
+    {
+      "star": {
+        "id": "1ud1vy4zk0795w",
+        "name": "Eta-334",
+        "type": "M",
+        "mass": 0.3,
+        "luminosity": 0.04,
+        "color": "#ffcc6f",
+        "radiusMeters": 381214900.0235956,
+        "temperatureK": 1155.6000000000001,
+        "temperatureC": 882.4500000000002,
+        "habitableZone": {
+          "start": 0.17541160386140583,
+          "end": 0.2
+        },
+        "habitableZoneMeters": {
+          "start": 26241575937.666313,
+          "end": 29920000000
+        }
+      },
+      "planets": [
+        {
+          "id": "1ud1vy4zka6njm",
+          "name": "Cryus",
+          "distanceMeters": 28277456040.179882,
+          "sizeMeters": 6671140.937134565,
+          "type": "habitable",
+          "temperatureK": 286.29740669159946,
+          "temperatureC": 13.147406691599485,
+          "atmosphere": {
+            "gaz.O2": 0.21,
+            "gaz.N2": 0.78,
+            "gaz.Ar": 0.01
+          },
+          "color": "#A9CBFC",
+          "hasRing": false,
+          "resources": {
+            "resource.iron": 0.1,
+            "resource.copper": 0.1,
+            "resource.nickel": 0.16,
+            "resource.zinc": 0.1,
+            "resource.aluminium": 0.14,
+            "resource.titanium": 0.27,
+            "resource.plomb": 0.21,
+            "resource.lithium": 0.1,
+            "resource.water": 0.569096828933997,
+            "resource.organicMatter": 0.3548388761596253
+          },
+          "gravity": 3.479369398350594,
+          "massDensity": 3731.093103746098,
+          "mass": 5.800094321144908e+23,
+          "pressure": 45417.84203863559,
+          "moons": [
+            {
+              "id": "1ud1vy4zkk6gk5",
+              "name": "Cryex",
+              "distanceMeters": 903403.6513375907,
+              "sizeMeters": 1644071.548083016,
+              "planetId": "1ud1vy4zka6njm",
+              "resources": {
+                "resource.water": 0.18,
+                "resource.regolith": 0.56,
+                "resource.iron": 0.12,
+                "resource.titanium": 0.04,
+                "resource.plomb": 0.01,
+                "resource.copper": 0.03,
+                "resource.zinc": 0.01,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03,
+                "water": 0
+              },
+              "color": "#a6b2b1"
+            },
+            {
+              "id": "1ud1vy4zkk6gsm",
+              "name": "Astor",
+              "distanceMeters": 1312809.0444607702,
+              "sizeMeters": 1654647.3075677773,
+              "planetId": "1ud1vy4zka6njm",
+              "resources": {
+                "resource.water": 0.33,
+                "resource.regolith": 0.46,
+                "resource.iron": 0.14,
+                "resource.titanium": 0.01,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.01,
+                "resource.zinc": 0,
+                "resource.gold": 0.01,
+                "resource.nickel": 0.03
+              },
+              "color": "#88afbd"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4zka6onl",
+          "name": "Solis",
+          "distanceMeters": 73983157820.64465,
+          "sizeMeters": 5691683.495158202,
+          "type": "rocky",
+          "temperatureK": 179.42402562076177,
+          "temperatureC": -93.72597437923821,
+          "atmosphere": {
+            "gaz.CO2": 0.55,
+            "gaz.N2": 0.19,
+            "gaz.O2": 0.18,
+            "gaz.H2O": 0.09
+          },
+          "color": "#ABCCFE",
+          "hasRing": false,
+          "resources": {
+            "resource.petrol": 0.1
+          },
+          "gravity": 1.8401885837187613,
+          "massDensity": 0,
+          "mass": 0,
+          "pressure": 28824.53272568215,
+          "moons": [
+            {
+              "id": "1ud1vy4zkk6ggl",
+              "name": "Astex",
+              "distanceMeters": 861411.0748434089,
+              "sizeMeters": 959718.8062486355,
+              "planetId": "1ud1vy4zka6onl",
+              "resources": {
+                "resource.water": 0.1,
+                "resource.regolith": 0.49,
+                "resource.iron": 0.17,
+                "resource.titanium": 0.1,
+                "resource.plomb": 0.02,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.05,
+                "resource.gold": 0.04,
+                "resource.nickel": 0.03
+              },
+              "color": "#b3a896"
+            }
+          ]
+        },
+        {
+          "id": "1ud1vy4zka6oe2",
+          "name": "Solum",
+          "distanceMeters": 258809372895.4817,
+          "sizeMeters": 6658330.89485089,
+          "type": "rocky",
+          "temperatureK": 94.67193744036558,
+          "temperatureC": -178.4780625596344,
+          "atmosphere": {
+            "gaz.O2": 0.63,
+            "gaz.CO2": 0.15,
+            "gaz.SO2": 0.13,
+            "gaz.Ar": 0.1
+          },
+          "color": "#CFD9DB",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 5.119085708868873,
+          "massDensity": 5500,
+          "mass": 8.500753725333941e+23,
+          "pressure": 85786.3294408192,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy4zka6n40",
+          "name": "Torum",
+          "distanceMeters": 387039798315.11523,
+          "sizeMeters": 62140840.71224632,
+          "type": "gas_giant",
+          "temperatureK": 77.84210613508802,
+          "temperatureC": -195.30789386491196,
+          "atmosphere": {
+            "gaz.He": 0.68,
+            "gaz.H2": 0.15,
+            "gaz.HCN": 0.09,
+            "gaz.CH4": 0.05,
+            "gaz.H2O": 0.04
+          },
+          "color": "#B8B8B8",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 43.784744032367485,
+          "massDensity": 0.07715438210487716,
+          "mass": 9.693722734516532e+21,
+          "pressure": 94209.5180087358,
+          "moons": []
+        },
+        {
+          "id": "1ud1vy4zka6o46",
+          "name": "Nexar",
+          "distanceMeters": 464447757978.13824,
+          "sizeMeters": 69881757.95127697,
+          "type": "gas_giant",
+          "temperatureK": 70.86905965097834,
+          "temperatureC": -202.28094034902165,
+          "atmosphere": {
+            "gaz.H2": 0.42,
+            "gaz.He": 0.41,
+            "gaz.CH4": 0.08,
+            "gaz.Ne": 0.08
+          },
+          "color": "#C4C4C4",
+          "hasRing": false,
+          "resources": {},
+          "gravity": 39.91578598257875,
+          "massDensity": 0.09749345304900861,
+          "mass": 1.7420697506607092e+22,
+          "pressure": 108525.42798287224,
+          "moons": [
+            {
+              "id": "1ud1vy57gomme5",
+              "name": "Nexus",
+              "distanceMeters": 13762329.840437893,
+              "sizeMeters": 20063309.13441097,
+              "planetId": "1ud1vy4zka6o46",
+              "resources": {
+                "resource.water": 0.23,
+                "resource.regolith": 0.59,
+                "resource.iron": 0.06,
+                "resource.titanium": 0.03,
+                "resource.plomb": 0.03,
+                "resource.copper": 0.01,
+                "resource.zinc": 0.02,
+                "resource.gold": 0.02,
+                "resource.nickel": 0.01,
+                "water": 0
+              },
+              "color": "#9fbfc2"
+            },
+            {
+              "id": "1ud1vy57gomng7",
+              "name": "Cryis",
+              "distanceMeters": 14180677.007873777,
+              "sizeMeters": 7346126.522618068,
+              "planetId": "1ud1vy4zka6o46",
+              "resources": {
+                "resource.water": 0.01,
+                "resource.regolith": 0.58,
+                "resource.iron": 0.1,
+                "resource.titanium": 0.09,
+                "resource.plomb": 0.04,
+                "resource.copper": 0.05,
+                "resource.zinc": 0.05,
+                "resource.gold": 0.03,
+                "resource.nickel": 0.04,
+                "water": 0
+              },
+              "color": "#c9b195"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasHabitablePlanet": true
+}

@@ -4,6 +4,8 @@ const micuitDb = require('micuit-db');
 const http = require('http');
 const ws = require('ws');
 const route = require('./route');
+const dotEnv = require('dotenv');
+dotEnv.config(); // Chargement des variables d'environnement
 // require('./lib/universeGenerator.js'); // Importation du générateur d'univers
 
 const port = process.env.PORT || 8080;
